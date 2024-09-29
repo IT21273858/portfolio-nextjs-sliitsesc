@@ -3,7 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import { FiFacebook, FiGlobe, FiInstagram, FiTwitter, FiUser } from "react-icons/fi"
 import Link from 'next/link';
-
+import ProfileImage from './assets/image.jpg'
 
 const DetailComp = ({ label, detail }: { label: string, detail: string }) => {
     return <div className=' w-full px-5 flex flex-col text-white'>
@@ -24,7 +24,7 @@ const AboutPage = () => {
             <div className=' w-full h-full  divide-x divide-white gap-1  grid grid-cols-2'>
                 <section className=' h-full w-full'>
                     <Image
-                        src={"/image.jpg"}
+                        src={ProfileImage}
                         alt="profile pic"
                         width={300}
                         height={300}
