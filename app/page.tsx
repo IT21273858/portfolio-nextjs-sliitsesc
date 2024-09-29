@@ -1,12 +1,13 @@
 import { BlogPosts } from "app/components/posts";
 import Image from "next/image";
+import ProfileImage from './assets/image.jpg'
 
 export default function Page() {
   return (
     <section>
       <div className="flex gap-x-4 items-center flex-row mb-10">
         <Image
-          src={"/image.jpg"}
+          src={ProfileImage}
           alt="profile pic"
           width={100}
           height={100}
